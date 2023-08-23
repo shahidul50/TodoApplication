@@ -19,7 +19,7 @@ const LoginScreen = () => {
     const [login, {isLoading}] = useLoginMutation()
     const {userInfo} = useSelector((state)=> state.auth)
 
-    useEffect(()=>{
+    useEffect(()=>{ 
         if(userInfo){
             navigate('/')
         }

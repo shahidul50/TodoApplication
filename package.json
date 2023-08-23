@@ -1,13 +1,14 @@
 {
-  "name": "mern-auth-apps",
+  "name": "todo-application",
   "version": "1.0.0",
   "type": "module",
-  "description": "MERN Authentication System",
+  "description": "",
   "main": "server.js",
   "scripts": {
+    "build": "npm run build --prefix frontend",
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
-    "client": "npm run dev --prefix fontend",
+    "client": "npm run dev --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Shahidul Islam",

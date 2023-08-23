@@ -6,7 +6,7 @@ import Todo from "../components/todo";
 import { useState } from "react";
 
 function HomeScreen() {
-    const [search, setSearch] = useState('pending')
+    const [search, setSearch] = useState('pending') 
     const getTodo = (search,todos) =>{
         if(search === 'pending'){
           const result = todos?.filter(item => item.completed === false)

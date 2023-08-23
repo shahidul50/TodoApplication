@@ -29,7 +29,7 @@ const router = createBrowserRouter(
       <Route path='*' element={<NotFound/>}/>
     </Route>
   )
-)
+) 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store}>
