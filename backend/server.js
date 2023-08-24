@@ -27,7 +27,7 @@ connectDB();
 //user api
 app.use('/api/users', userRoutes)
 app.use('/api/todos', todoRoutes)
-
+console.log(process.env.NODE_ENV);
 // Serve frontend
 if (process.env.NODE_ENV === 'production') {
     const __dirname = path.resolve();
@@ -39,7 +39,7 @@ if (process.env.NODE_ENV === 'production') {
 } else {
     app.get('/', (req, res) => res.send('API is running....'));
 }
-console.log(process.env.NODE_ENV);
+
 //error Handler
 app.use(notFound)
 app.use(errorHandler)
